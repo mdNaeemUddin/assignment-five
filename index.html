@@ -159,7 +159,7 @@
                             </div>
                             <div class="raleway-font mx-auto text-start">
                                 <h3 class=" text-3xl font-semibold">
-                                    Couple20
+                                    Couple 20
                                 </h3>
                                 <p>
                                     Coupon Code
@@ -177,7 +177,7 @@
         <!-- paribahan section -->
 
 
-        <section class="mt-16  bg-[#F7F8F8] px-[135px] py-[80px]">
+        <section id="paribahan" class="mt-16  bg-[#F7F8F8] px-[135px] py-[80px]">
             <!-- description -->
 
 
@@ -218,7 +218,7 @@
                                 <div>
                                     <div class="flex items-center space-x-2 bg-[#1DD10026] px-4 py-2 ">
                                         <img class="" src="images/seat-green-filled.png " alt="a bus seat icon">
-                                        <span class="text-[#1DD100] text-lg font-medium"><span>40</span> Selected</span>
+                                        <span class="text-[#1DD100] text-lg font-medium"><span id="total-seat">40</span> Selected</span>
                                     </div>
                                 </div>
                             </div>
@@ -298,7 +298,7 @@
                         </div>
                     </div>
 
-
+                    <!--Seat Selection : total seat -->
                     <div>
                         <div class="flex justify-end">
                             <div class=" mb-4 border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">
@@ -322,16 +322,16 @@
                                 <div class="border-2 bg-[#FFFFFF] p-6 w-24 flex justify-center">J</div>
                             </div>
                             <div class="flex flex-col gap-4">
-                                <div class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">A1</div>
-                                <div class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">B1</div>
-                                <div class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">C1</div>
-                                <div class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">D1</div>
-                                <div class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">E1</div>
-                                <div class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">F1</div>
-                                <div class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">G1</div>
-                                <div class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">H1</div>
-                                <div class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">I1</div>
-                                <div class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">J1</div>
+                                <div id="1" class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">A1</div>
+                                <div id="2" class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">B1</div>
+                                <div id="3" class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">C1</div>
+                                <div id="4" class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">D1</div>
+                                <div id="5" class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">E1</div>
+                                <div id="6" class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">F1</div>
+                                <div id="7" class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">G1</div>
+                                <div id="8" class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">H1</div>
+                                <div id="9" class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">I1</div>
+                                <div id="10" class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">J1</div>
                             </div>
                             <div class="flex flex-col gap-4">
                                 <div class="border-2 rounded-xl bg-[#F7F8F8] p-6 w-24 flex justify-center">A2</div>
@@ -381,9 +381,9 @@
                         Select Your Seat
                     </h2>
                     <div class="bg-[#F7F8F8] p-6 space-y-4 mb-4">
-                        <div class="inter-font space-y-4">
+                        <div id="append-seat-info" class="inter-font space-y-4">
                             <div class="flex justify-between text-sm font-bold text-[#030712]">
-                                <h3> Seat <span class="bg-[#1DD100] text-white p-1 rounded-full"> 2</span></h3>
+                                <h3> Seat <span id="seat-buy" class="bg-[#1DD100] text-white p-1 rounded-full"> 2</span></h3>
                                 <h3>Class </h3>
                                 <h3>Price</h3>
                             </div>
@@ -393,10 +393,15 @@
                                 <h3>Economoy</h3>
                                 <h3>550 </h3>
                             </div>
+                            <div class="flex justify-between">
+                                <h3>C2</h3>
+                                <h3>Economoy</h3>
+                                <h3>550 </h3>
+                            </div>
                             <div class="border-b-2  border-solid border-[#03071233] text-[#1DD100]"></div>
-                            <div class="flex justify-between text-bold">
+                            <div class="flex justify-between text-sm font-bold text-[#030712]">
                                 <h3>Total Price </h3>
-                                <h3> 1100 BDT <span>BDT</span> </h3>
+                                <h3>BDT<span id="seat-price">1100</span> </h3>
                             </div>
                         </div>
                         <div>
@@ -408,11 +413,13 @@
                                 Grand Total
                             </h3>
                             <h3>
-                                BDT <span> 1100</span>
+                                BDT <span id="grand-price"> 1100</span>
                             </h3>
 
                         </div>
                     </div>
+
+                    <!--part 2 : side form -->
                     <div>
                         <form action="" class="space-y-4 ">
                             <p>
