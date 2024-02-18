@@ -18,6 +18,7 @@
 
 <body>
     <header class="container mx-auto mt-12 ">
+        <!-- nav-bar -->
         <div class="flex justify-between items-center pb-12">
             <div class="flex items-center raleway-font">
                 <h3 class="text-4xl font-extrabold pr-72">
@@ -25,47 +26,86 @@
                 </h3>
 
                 <ul class="flex text-lg font-normal text-[#030712B3] space-x-16">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Destination</li>
-                    <li>Search</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">Search</a></li>
                 </ul>
 
             </div>
             <div>
-                <button class="btn bg-[#1DD1001A] text-xl text-[#1DD100] border-2 border-[#52f339] font-bold">
+                <button
+                    class="btn bg-[#1DD1001A] text-xl text-[#1DD100] border-2 border-[#52f339] rounded-lg font-bold">
                     Bus <img class="inline" src="images/bus-icon.png" alt="A Bus">
                 </button>
             </div>
         </div>
+        <!-- banner -->
+        <div class="">
+            <div
+                class="bg-[url('images/banner.png')] bg-no-repeat bg-cover space-y-10 flex flex-col items-center pt-[120px] pb-[250px] rounded-[32px] ">
+                <div
+                    class="text-6xl text-white font-extrabold raleway-font w-[742px] flex flex-col items-center space-y-8">
+                    <h1>
+                        Ent-to-End Travel With
+                    </h1>
+                    <h1 class="text-[#1DD100]"> NR Paribahan</h1>
+                </div>
 
-        <div>
-            <div class="bg-[url('images/banner.png')] bg-no-repeat">
-                <h1>
-                    Ent-to-End Travel With <br>
-                    NR Paribahan
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sitia aliquam ea. Obcaecati ducimus voluptates sed nesciunt ad reprehenderit eligendi esse eaque quidem suscipit architecto doloremque, qui error quisquam! Nulla, qui incidunt illo ex expedita vero reconsequatur!
+                <p class="text-lg inter-font text-white font-normal w-[742px] text-center">
+                    NR Bus Paribahan: Connecting Journeys, Ensuring Comfort. Your Reliable Travel Companion. Discover
+                    Our Routes, Services, and Commitment to Excellence. Experience Safe and Efficient Transportation
+                    with NR Bus Paribahan. Explore Destinations, Enjoy Comfortable Rides, and Trust in Our Dedication to
+                    Passenger Satisfaction. Welcome Aboard!
                 </p>
-                <button class="btn btn-secondary">
-                    Buy Tickets
+                <button
+                    class="btn bg-[#1DD100] border-2 border-[#1DD100] rounded-lg text-xl font-bold text-black raleway-font">
+                    <a href="#paribahan">Buy Tickets</a>
                 </button>
             </div>
-            <div>
-                <div class="flex items-center space-x-2">
+
+            <div class="inter-font flex justify-around -mt-[68px]">
+                <div
+                    class="flex items-center space-x-2 w-[310px]  p-8 bg-[#FFFFFF] border-2 border-b-[#1DD100] rounded-[24px] shadow-lg">
                     <img src="images/people.png" alt="peoples icon">
-                    <div>
-                        <h3 class="text-3xl font-extrabold">
+                    <div class=" ">
+                        <h3 class="text-4xl font-bold text-[#030712]">
                             500K+
                         </h3>
-                        <p>
+                        <p class="text-lg font-normal text-[#03071299] ">
                             Registered Users
                         </p>
                     </div>
                 </div>
+                <div
+                    class="flex items-center space-x-2 w-[310px]  p-8 bg-[#FFFFFF] border-2 border-b-[#1DD100] rounded-[24px] shadow-lg">
+                    <img src="images/ticket-cupon.png" alt="peoples icon">
+                    <div class=" ">
+                        <h3 class="text-4xl font-bold text-[#030712]">
+                            1.7 Lacks
+                        </h3>
+                        <p class="text-lg font-normal text-[#03071299] ">
+                            Tickets Sold
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center space-x-2 w-[310px]  p-8 bg-[#FFFFFF] border-2 border-b-[#1DD100] rounded-[24px] shadow-lg">
+                    <img src="images/stoppage.png" alt="peoples icon">
+                    <div class=" ">
+                        <h3 class="text-4xl font-bold text-[#030712]">
+                            80K+
+                        </h3>
+                        <p class="text-lg font-normal text-[#03071299] ">
+                            Rental Partners
+                        </p>
+                    </div>
+                </div>
             </div>
+
+
         </div>
+
     </header>
     <main>
 
