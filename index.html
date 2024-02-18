@@ -10,18 +10,68 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
 
 </head>
 
 <body>
-    <header>
+    <header class="container mx-auto mt-12 ">
+        <div class="flex justify-between items-center pb-12">
+            <div class="flex items-center raleway-font">
+                <h3 class="text-4xl font-extrabold pr-72">
+                    NR-Ticket
+                </h3>
 
+                <ul class="flex text-lg font-normal text-[#030712B3] space-x-16">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Destination</li>
+                    <li>Search</li>
+                </ul>
+
+            </div>
+            <div>
+                <button class="btn bg-[#1DD1001A] text-xl text-[#1DD100] border-2 border-[#52f339] font-bold">
+                    Bus <img class="inline" src="images/bus-icon.png" alt="A Bus">
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <div class="bg-[url('images/banner.png')] bg-no-repeat">
+                <h1>
+                    Ent-to-End Travel With <br>
+                    NR Paribahan
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sitia aliquam ea. Obcaecati ducimus voluptates sed nesciunt ad reprehenderit eligendi esse eaque quidem suscipit architecto doloremque, qui error quisquam! Nulla, qui incidunt illo ex expedita vero reconsequatur!
+                </p>
+                <button class="btn btn-secondary">
+                    Buy Tickets
+                </button>
+            </div>
+            <div>
+                <div class="flex items-center space-x-2">
+                    <img src="images/people.png" alt="peoples icon">
+                    <div>
+                        <h3 class="text-3xl font-extrabold">
+                            500K+
+                        </h3>
+                        <p>
+                            Registered Users
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 
     <script src="script.js"></script>
