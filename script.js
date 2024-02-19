@@ -5,18 +5,16 @@ let cnt = 0;
 
 for (const item of seat) {
   item.addEventListener("click", function (event) {
-   
+    item.style.backgroundColor = "green";
     cnt = cnt + 1;
-    if (cnt <= 4) {
-      item.style.backgroundColor = "green";
-    }
-    else if (cnt > 4) {
+
+    if (cnt > 4) {
       window.alert("You can buy only 4 seat");
+      item.style.backgroundColor = "red";
     } else if (cnt === 4) {
       const element = document.getElementById("discount");
       element.classList.remove("btn-disabled");
     } else {
-
       const totalSeatElement = document.getElementById("total-seat");
       const totalSeatElementText = totalSeatElement.innerText;
       const totalSeat = parseInt(totalSeatElementText);
@@ -25,12 +23,14 @@ for (const item of seat) {
       totalSeatElement.innerText = updated;
     }
 
-    const buySeatElement = document.getElementById("seat-buy");
-    const buySeatElementText = buySeatElement.innerText;
-    const buySeat = parseInt(buySeatElementText);
-    const buy = cnt;
+    if (cnt <= 4) {
+      const buySeatElement = document.getElementById("seat-buy");
+      const buySeatElementText = buySeatElement.innerText;
+      const buySeat = parseInt(buySeatElementText);
+      const buy = cnt;
 
-    buySeatElement.innerText = buy;
+      buySeatElement.innerText = buy;
+    }
 
     const value = event.target.innerText;
     appendFunc(value, cnt);
@@ -90,7 +90,6 @@ function grandPrice(cnt) {
   }
 }
 
-
-document.addEventListener('dblclick', function () {
-  console.log('double click');
-})
+document.addEventListener("dblclick", function () {
+  console.log("double click");
+});
