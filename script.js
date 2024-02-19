@@ -3,13 +3,14 @@
 const seat = document.getElementsByClassName("seat");
 let cnt = 0;
 
+
 for (const item of seat) {
   item.addEventListener("click", function (event) {
     item.style.backgroundColor = "green";
     cnt = cnt + 1;
 
     if (cnt > 4) {
-      window.alert("You can buy only 4 seat");
+      window.alert("You can select only 4 seat");
       item.style.backgroundColor = "#F7F8F8";
     } else if (cnt === 4) {
       const element = document.getElementById("discount");
@@ -40,6 +41,8 @@ for (const item of seat) {
   });
 }
 
+
+
 document.getElementById("success").addEventListener("click", function () {
   const item = document.getElementById("modal");
   item.classList.remove("hidden");
@@ -51,6 +54,7 @@ document.getElementById("success").addEventListener("click", function () {
 
   document.getElementById("footer").classList.add("hidden");
 });
+
 
 function appendFunc(item, cnt) {
   if (cnt <= 4) {
@@ -81,6 +85,7 @@ function appendFunc(item, cnt) {
   }
 }
 
+
 function grandPrice(cnt) {
   if (cnt <= 4) {
     const price = document.getElementById("grand-price");
@@ -93,3 +98,5 @@ function grandPrice(cnt) {
 document.addEventListener("dblclick", function () {
   console.log("double click");
 });
+
+
