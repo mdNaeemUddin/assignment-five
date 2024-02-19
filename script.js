@@ -10,7 +10,7 @@ for (const item of seat) {
 
     if (cnt > 4) {
       window.alert("You can buy only 4 seat");
-      item.style.backgroundColor = "red";
+      item.style.backgroundColor = "#F7F8F8";
     } else if (cnt === 4) {
       const element = document.getElementById("discount");
       element.classList.remove("btn-disabled");
