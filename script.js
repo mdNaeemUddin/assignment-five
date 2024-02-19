@@ -5,15 +5,18 @@ let cnt = 0;
 
 for (const item of seat) {
   item.addEventListener("click", function (event) {
-    item.style.backgroundColor = "green";
+   
     cnt = cnt + 1;
-
-    if (cnt > 4) {
+    if (cnt <= 4) {
+      item.style.backgroundColor = "green";
+    }
+    else if (cnt > 4) {
       window.alert("You can buy only 4 seat");
     } else if (cnt === 4) {
       const element = document.getElementById("discount");
       element.classList.remove("btn-disabled");
     } else {
+
       const totalSeatElement = document.getElementById("total-seat");
       const totalSeatElementText = totalSeatElement.innerText;
       const totalSeat = parseInt(totalSeatElementText);
@@ -87,3 +90,7 @@ function grandPrice(cnt) {
   }
 }
 
+
+document.addEventListener('dblclick', function () {
+  console.log('double click');
+})
